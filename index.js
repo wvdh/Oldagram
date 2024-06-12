@@ -80,17 +80,21 @@ function buildPost() {
 }
 
 function likeBtn() {
-    document.querySelectorAll(".like").forEach(btn => btn.addEventListener("click", toggleLike));
+    document.querySelectorAll(".like").forEach(btn =>
+        btn.addEventListener("click", toggleLike))
 }
 
 function toggleLike() {
+    
     const likesEl = this.parentElement.nextElementSibling.firstElementChild
+    
     let count = Number(likesEl.textContent)
     if (this.classList.contains("on")) {
         count--
     } else {
         count++
     }
+
     this.classList.toggle("on")
     likesEl.textContent = count
 }
