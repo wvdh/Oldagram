@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0 auto;
+    max-width: 375px;
+    font-family: 'Source Sans 3', sans-serif;
+    background-color: #F5F5F5;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    flex-grow: 0;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    padding: 5px 8px;
+    border-bottom: 5px solid #C6C6C6;
+    background-color: #FFFFFF; 
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.10);
+}
+
+h1 {
+    font-size: 14px;
+    font-weight: 900;
+    margin: 0;
+}
+
+h2 {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0;
+}
+
+span {
+    margin: 0;
+    font-weight: 700;
+}
+
+.post-caption {
+    margin: 0;
+    padding: 8px 0px;
+}
+
+.container {
+    color: #000000;
+    background-color: #FFFFFF;
+    border-bottom: 10px solid #C6C6C6;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.logo {
+    width: 127px;
+}
+
+.user-avatar,
+.post-avatar {
+    width: 37px;
+    border-radius: 50%;
+}
+
+.post-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.post-img {
+    width: 100%;
+}
+
+.post-footer {
+    display: flex;
+}
+
+.like img {
+    width: 25px;
+}
+
+.like .heart-full {
+    display: none; 
+}
+
+.btn {
+    width: 25px;
+    cursor: pointer;
+    user-select: none;
+    padding: 5px 0px;
+}
+
+.btn.on .heart-full {
+    display: block;
+}
+
+.btn.on .heart-empty {
+    display: none;
+}
+
+.btn:hover {
+    opacity: 60%;
+    transition-duration: .5s;
+}
+
+
+
